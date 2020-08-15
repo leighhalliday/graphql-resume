@@ -7,6 +7,7 @@ export const Position = objectType({
     t.id("id");
     t.string("title");
     t.string("company");
+    t.string("location");
     t.date("startDate", {
       description: "When I started at this position",
       resolve: (position) => new Date(position.startDate),
